@@ -1,0 +1,26 @@
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\obj\Debug\Theory.csprojResolveAssemblyReference.cache
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Benkyou\bin\Debug\Plugins\Theory.dll
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Benkyou\bin\Debug\Plugins\Theory.pdb
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\bin\Debug\Lib.dll
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\bin\Debug\Lib.pdb
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\obj\Debug\Theory.csproj.GenerateResource.Cache
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\obj\Debug\Theory.TheoryControl.resources
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\bin\Debug\1. Theory.dll
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\bin\Debug\1. Theory.pdb
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\obj\Debug\1. Theory.dll
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Theory\obj\Debug\1. Theory.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\bin\Debug\1. Theory.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\bin\Debug\1. Theory.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\bin\Debug\HtmlAgilityPack.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\bin\Debug\Lib.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\bin\Debug\Lib.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\bin\Debug\HtmlAgilityPack.xml
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\obj\Debug\Theory.csprojResolveAssemblyReference.cache
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\obj\Debug\Theory.TheoryControl.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\obj\Debug\Theory.csproj.GenerateResource.Cache
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\obj\Debug\1. Theory.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Theory\obj\Debug\1. Theory.pdb

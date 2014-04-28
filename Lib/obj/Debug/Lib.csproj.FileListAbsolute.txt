@@ -1,0 +1,16 @@
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Lib\bin\Debug\Lib.dll
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Lib\bin\Debug\Lib.pdb
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Lib\obj\Debug\Lib.dll
+C:\Users\Alduin\Dropbox\Projects\Benkyou\Lib\obj\Debug\Lib.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Lib\bin\Debug\Lib.dll.config
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Lib\bin\Debug\Lib.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Lib\bin\Debug\Lib.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Lib\obj\Debug\Lib.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Lib\obj\Debug\Lib.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Lib\obj\Debug\Lib.csprojResolveAssemblyReference.cache
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Lib\bin\Debug\Lib.dll.config
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Lib\bin\Debug\Lib.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Lib\bin\Debug\Lib.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Lib\obj\Debug\Lib.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Lib\obj\Debug\Lib.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\Lib\obj\Debug\Lib.csprojResolveAssemblyReference.cache

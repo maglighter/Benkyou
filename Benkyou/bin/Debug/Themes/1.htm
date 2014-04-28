@@ -1,0 +1,166 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=unicode" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 11.00.9600.16521">
+<title>Основные понятия</title>
+</HEAD>
+<BODY>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">В 
+этом разделе курса мы рассматриваем понятие графа. В последнее время теория 
+графов стала простым, доступным и мощным средством решения вопросов, относящихся 
+к широкому кругу проблем. Это проблемы проектирования интегральных схем и схем 
+управления, исследования автоматов, логических цепей, блок-схем программ, 
+экономики и статистики, химии и биологии, теории расписаний и дискретной 
+оптимизации.</P>
+<H2 
+style="FONT-FAMILY: 'Times New Roman'; FONT-VARIANT: normal; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT-STYLE: normal; LETTER-SPACING: normal; LINE-HEIGHT: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">1<SPAN 
+class=Apple-converted-space>&nbsp;</SPAN><A name=1></A>Основные понятия</H2>
+<H3 
+style="FONT-FAMILY: 'Times New Roman'; FONT-VARIANT: normal; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT-STYLE: normal; LETTER-SPACING: normal; LINE-HEIGHT: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">Способы 
+задания графа</H3>
+<OL 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">
+  <LI>Явное задание графа как алгебраической системы.</LI>
+  <LI>Геометрический</LI>
+  <LI>Матрица смежности</LI>
+  <LI>Матрица инцидентности</LI></OL>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">Рассмотрим 
+различные способы задания для одного и того же графа.</P>
+<OL 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">
+  <LI>&lt;{<I>a,b,c,d</I>},{<I>u,v,w,x</I>}<I>;<SPAN 
+  class=Apple-converted-space>&nbsp;</SPAN></I>{(<I>u,a</I>),(<I>u,b</I>),(<I>v,b</I>),(<I>v,c</I>),(<I>w,c</I>),(<I>w,a</I>),(<I>x,c</I>), 
+  (<I>x,d</I>)}&gt;. Так как мы рассматриваем только простые графы, граф нам 
+  проще определять как модель, носителем которой является множество вершин, а 
+  отношение – бинарное отношение смежности вершин. Тогда данный граф запишется 
+  как &lt;{<I>a,b,c,d</I>}<I>;<SPAN 
+  class=Apple-converted-space>&nbsp;</SPAN></I>{(<I>a,b</I>), 
+  (<I>b,a</I>),(<I>b,c</I>),(<I>c,b</I>),(<I>a,c</I>),(<I>c,a</I>),(<I>c,d</I>),(<I>d,c</I>)}&gt;. 
+  В таком представлении ребру соответствуют две пары вершин 
+  (<I>v<SUB></SUB></I>1<I>,v<SUB></SUB></I>2) и 
+  (<I>v<SUB></SUB></I>2<I>,v<SUB></SUB></I>1), инцидентных данному ребру. Чтобы 
+  задать такое представление, достаточно для каждого ребра указать 
+  двухэлементное множество вершин – его мы и будем отождествлять с ребром. Для 
+  данного графа рёбра задаются множеством 
+  {{<I>a,b</I>},{<I>b,c</I>},{<I>a,c</I>},{<I>c,d</I>}} и граф мы будем 
+  записывать как пару (<I>V,E</I>), где<SPAN 
+  class=Apple-converted-space>&nbsp;</SPAN><I>V</I><SPAN 
+  class=Apple-converted-space>&nbsp;</SPAN>– множество вершин, а<SPAN 
+  class=Apple-converted-space>&nbsp;</SPAN><I>E</I><SPAN 
+  class=Apple-converted-space>&nbsp;</SPAN>– множество рёбер.
+  <P class=ind style="TEXT-INDENT: 24pt">В дальнейшем мы будем опираться именно 
+  на второе определение графа.</P></LI>
+  <LI>Геометрический
+  <P align=center><IMG 
+  src="http://www.univer.omsk.su/departs/compsci/kursi/disc/gr.gif"><BR></P></LI></OL>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">3. 
+Матрица смежности</P>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">
+<TABLE border=1>
+  <TBODY>
+  <TR>
+    <TD></TD>
+    <TH>a</TH>
+    <TH>b</TH>
+    <TH>c</TH>
+    <TH>d</TH></TR>
+  <TR>
+    <TH>a</TH>
+    <TD>0</TD>
+    <TD>1</TD>
+    <TD>1</TD>
+    <TD>0</TD></TR>
+  <TR>
+    <TH>b</TH>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>1</TD>
+    <TD>0</TD></TR>
+  <TR>
+    <TH>c</TH>
+    <TD>1</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>1</TD></TR>
+  <TR>
+    <TH>d</TH>
+    <TD>0</TD>
+    <TD>0</TD>
+    <TD>1</TD>
+    <TD>0</TD></TR>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE></P>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">4. 
+Матрица инцидентности</P>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">
+<TABLE border=1>
+  <TBODY>
+  <TR>
+    <TD></TD>
+    <TH>u</TH>
+    <TH>v</TH>
+    <TH>w</TH>
+    <TH>x</TH></TR>
+  <TR>
+    <TH>a</TH>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>0</TD>
+    <TD>0</TD></TR>
+  <TR>
+    <TH>b</TH>
+    <TD>1</TD>
+    <TD>1</TD>
+    <TD>1</TD>
+    <TD>0</TD></TR>
+  <TR>
+    <TH>c</TH>
+    <TD>0</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>1</TD></TR>
+  <TR>
+    <TH>d</TH>
+    <TD>0</TD>
+    <TD>0</TD>
+    <TD>1</TD>
+    <TD>1</TD></TR>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE></P>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">Понятие 
+изоморфизма для графов имеет наглядное толкование. Представим рёбра графов 
+эластичными нитями, связывающими узлы – вершины. Тогда, изоморфизм можно 
+представить как перемещение узлов и растяжение нитей.<A name=isoex></A></P>
+<P 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px"><I>Пример 
+1 (изоморфизм).<SPAN class=Apple-converted-space>&nbsp;</SPAN></I>Покажем, что 
+следующие два графа изоморфны.</P>
+<P 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" 
+align=center><IMG 
+src="http://www.univer.omsk.su/departs/compsci/kursi/disc/4.gif"><BR></P>
+<P class=ind 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: medium 'Times New Roman'; LETTER-SPACING: normal; TEXT-INDENT: 24pt; -webkit-text-stroke-width: 0px">Действительно, 
+отображение<SPAN class=Apple-converted-space>&nbsp;</SPAN><I>a<SPAN 
+class=Apple-converted-space>&nbsp;</SPAN></I><SPAN 
+style="FONT-FAMILY: Symbol">®</SPAN><I><SPAN 
+class=Apple-converted-space>&nbsp;</SPAN>e, b<SPAN 
+class=Apple-converted-space>&nbsp;</SPAN></I><SPAN 
+style="FONT-FAMILY: Symbol">®</SPAN><I><SPAN 
+class=Apple-converted-space>&nbsp;</SPAN>f, c<SPAN 
+class=Apple-converted-space>&nbsp;</SPAN></I><SPAN 
+style="FONT-FAMILY: Symbol">®</SPAN><I><SPAN 
+class=Apple-converted-space>&nbsp;</SPAN>g, d<SPAN 
+class=Apple-converted-space>&nbsp;</SPAN></I><SPAN 
+style="FONT-FAMILY: Symbol">®</SPAN><I><SPAN 
+class=Apple-converted-space>&nbsp;</SPAN>h</I>, являющееся изоморфизмом легко 
+представить как модификацию первого графа, передвигающую вершину<SPAN 
+class=Apple-converted-space>&nbsp;</SPAN><I>d</I><SPAN 
+class=Apple-converted-space>&nbsp;</SPAN>в центр рисунка.</P></BODY></HTML>
