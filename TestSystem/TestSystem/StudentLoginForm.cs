@@ -41,12 +41,20 @@ namespace TestSystem
             {
                 sdb = new StudentsDB();
                 sdb.insert_student(secondNameTB.Text, firstNameTB.Text, groupTB.Text);
-                sdb.show_students();
+                //sdb.show_students();
                 this.result = true;
                 this.Close();
             }
             else
                 MessageBox.Show("Пожалуйста, заполните все поля формы входа.", "Не все поля заполнены", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void groupTB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                userLoginButton_Click(sender, e);
+            }
         }
     }
 }

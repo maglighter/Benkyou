@@ -58,6 +58,7 @@
             this.groupTB.Name = "groupTB";
             this.groupTB.Size = new System.Drawing.Size(72, 20);
             this.groupTB.TabIndex = 2;
+            this.groupTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.groupTB_KeyDown);
             // 
             // label1
             // 

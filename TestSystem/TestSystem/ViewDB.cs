@@ -77,6 +77,13 @@ namespace TestSystem
             dataGridView1.Columns[1].HeaderText = "Номер ответа";
             dataGridView1.Columns[2].HeaderText = "Верность";
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            if (dataGridView1.RowCount > 0)
+            {
+                sdb.cn.Open();
+                sdb.cmd.CommandText = "SELECT Results.right_answers FROM (Courses INNER JOIN Results ON Courses.ID = Results.course_id) INNER JOIN Answers ON Results.ID = Answers.result_id WHERE (((Results.student_id)=" + st[listBox1.SelectedIndex] + ") AND ((Results.course_id)=" + cs[listBox2.SelectedIndex] + "));";
+                label4.Text = Convert.ToInt32(sdb.cmd.ExecuteScalar()).ToString() + " %";
+                sdb.cn.Close();
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -106,6 +113,17 @@ namespace TestSystem
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var results_form = new Results();
+            results_form.ShowDialog();
         }
 
     }

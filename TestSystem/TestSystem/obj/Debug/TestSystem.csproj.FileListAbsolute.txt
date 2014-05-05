@@ -34,3 +34,4 @@ C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou2\TestSystem\TestSyst
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\TestSystem.dll.config
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\TestSystem.dll
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\obj\Debug\TestSystem.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\obj\Debug\TestSystem.Results.resources

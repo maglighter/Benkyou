@@ -36,14 +36,51 @@ namespace Lib
 
         public void insert_answers(int[] answers, bool[] answerchoosed, string course)
         {
+            string student_id = get_last_student_id();
             cn.Open();
-            for (int i = 0; i < answerchoosed.Length; i++)
+            cmd.CommandText = "SELECT Courses.ID FROM Courses WHERE Courses.course = '" + course + "';";
+            string course_id = cmd.ExecuteScalar().ToString();
+            cmd.CommandText = "INSERT INTO Results (course_id, student_id, time_end) VALUES ('" + course_id + "','" + student_id  + "','" + DateTime.Now.ToString("T") + "');";
+            cmd.ExecuteNonQuery();
+            cmd.CommandText = "SELECT ID FROM Results WHERE Results.course_id = " + course_id + " and Results.student_id = " + student_id + ";";
+            string result_id = cmd.ExecuteScalar().ToString();
+            cmd.CommandText = "SELECT RightAnswers.question_num, RightAnswers.answer_num FROM RightAnswers WHERE RightAnswers.course_id = " + course_id +";";
+            dr = cmd.ExecuteReader();
+            int i = 0;
+            string is_right_answer;
+            int[] r_answers = new int[answers.Length];
+            while (dr.Read())
             {
-                //if (answerchoosed[i] == false || answers[i] == 0)
-                //    cmd.CommandText = "INSERT INTO Students (first_name, second_name, [group], time_login) VALUES ('" + i + "', '" + answers[i] + "', '" + group
-                //+ "', '" + DateTime.Now.ToString("T") + "');";
+                r_answers[i] = Convert.ToInt32(dr[1].ToString());
+                i++;
+            }
+            dr.Close();
+            int right_ch = 0;
+            for (i = 0; i<answers.Length; i++)
+            {
+                if (answerchoosed[i] == false)
+                {
+                    cmd.CommandText = "INSERT INTO Answers (result_id, question_num, answer_num, is_right_answer) VALUES (" + result_id + ", " + (i + 1).ToString() + ", " + "-1" + ", " + "False" + ");";
+                }
+                else
+                {
+                    if (r_answers[i] == answers[i] + 1)
+                    {
+                        is_right_answer = "True";
+                        right_ch++;
+                    }
+                    else
+                        is_right_answer = "False";
+                    cmd.CommandText = "INSERT INTO Answers (result_id, question_num, answer_num, is_right_answer) VALUES (" + result_id + ", " + (i + 1).ToString() + ", " + (answers[i]+1).ToString() + ", " + is_right_answer + ");";
+                }
                 cmd.ExecuteNonQuery();
             }
+            int total = 0;
+            if (right_ch != 0)
+                total = (int)(0.5f + ((100f * right_ch) / answers.Length));
+            cmd.CommandText = "UPDATE Results SET right_answers = " + total.ToString() + " WHERE ID = " + result_id + ";";
+            cmd.ExecuteNonQuery();
+
             cn.Close();
         }
 
@@ -59,19 +96,22 @@ namespace Lib
             return dt;
         }
 
-        public void show_students()
+        public string get_last_student_id()
         {
             cmd.CommandText = "SELECT * FROM Students;";
             cn.Open();
             dr = cmd.ExecuteReader();
+            string last_student_id = "";
             while (dr.Read())
             {
-                for (int i = 0; i < 5; i++)
-                    Console.Write(dr[i].ToString() + " ");
-                Console.WriteLine();
+ //               for (int i = 0; i < 5; i++)
+  //                  Console.Write(dr[i].ToString() + " ");
+  //              Console.WriteLine();
+                last_student_id = dr[0].ToString();
             }
             dr.Close();
             cn.Close();
+            return last_student_id;
         }
 
         public bool clear_data()
