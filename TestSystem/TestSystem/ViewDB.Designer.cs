@@ -62,6 +62,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(225, 33);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.Size = new System.Drawing.Size(398, 360);
             this.dataGridView1.TabIndex = 0;
@@ -150,11 +151,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(499, 406);
+            this.button3.Location = new System.Drawing.Point(469, 406);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 26);
+            this.button3.Size = new System.Drawing.Size(138, 26);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Результаты";
+            this.button3.Text = "Общие результаты";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

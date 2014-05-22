@@ -9,7 +9,7 @@ namespace Lib
     public class StudentsDB
     {
         public OleDbCommand cmd = new OleDbCommand();
-        public OleDbConnection cn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"..\\..\\..\\Lib\\bin\\Debug\\students_db.accdb\"");
+        public OleDbConnection cn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"..\\..\\..\\Lib\\bin\\Debug\\students_db.mdb\"");
         public OleDbDataReader dr;
         public OleDbDataAdapter da;
 
