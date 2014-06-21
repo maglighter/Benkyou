@@ -41,3 +41,5 @@ C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Benkyou\obj\Debug\Be
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Benkyou\obj\Debug\Benkyou.Form1.resources
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Benkyou\obj\Debug\Benkyou.Properties.Resources.resources
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Benkyou\obj\Debug\Benkyou.csproj.GenerateResource.Cache
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Benkyou\bin\Debug\LiveSwitch.TextControl.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Benkyou\bin\Debug\LiveSwitch.TextControl.dll

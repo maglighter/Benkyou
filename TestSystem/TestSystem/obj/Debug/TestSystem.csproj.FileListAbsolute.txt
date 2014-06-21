@@ -35,3 +35,8 @@ C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSyste
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\TestSystem.dll
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\obj\Debug\TestSystem.dll
 C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\obj\Debug\TestSystem.Results.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\HtmlAgilityPack.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\LiveSwitch.TextControl.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\HtmlAgilityPack.xml
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\TestSystem\TestSystem\bin\Debug\LiveSwitch.TextControl.dll

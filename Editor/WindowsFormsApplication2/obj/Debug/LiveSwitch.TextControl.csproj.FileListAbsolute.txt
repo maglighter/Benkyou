@@ -1,0 +1,15 @@
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.Editor.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.Form1.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.LinkDialog.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.Properties.Resources.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.SearchDialog.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.TestManager.resources
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.csproj.GenerateResource.Cache
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\bin\Debug\LiveSwitch.TextControl.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\bin\Debug\HtmlAgilityPack.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\bin\Debug\HtmlAgilityPack.xml
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.pdb
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\bin\Debug\LiveSwitch.TextControl.dll.config
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\bin\Debug\LiveSwitch.TextControl.dll
+C:\Users\TPW7\Documents\Visual Studio 2012\Projects\Benkyou\Editor\WindowsFormsApplication2\obj\Debug\LiveSwitch.TextControl.dll

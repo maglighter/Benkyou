@@ -126,5 +126,12 @@ namespace TestSystem
             results_form.ShowDialog();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+           // ShowDialog(new LiveSwitch.TextControl.Form1());
+            var TS = new LiveSwitch.TextControl.Form1();
+            TS.ShowDialog();
+        }
+
     }
 }

@@ -144,6 +144,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Editor\WindowsFormsApplication2\LiveSwitch.TextControl.csproj">
+      <Project>{67c2881e-3762-4ead-8f0f-eb362c3608e4}</Project>
+      <Name>LiveSwitch.TextControl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Lib\Lib.csproj">
       <Project>{1c8c0dbe-1ba4-46e2-a79f-8158c8bb1cad}</Project>
       <Name>Lib</Name>

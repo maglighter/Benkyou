@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67C2881E-3762-4EAD-8F0F-EB362C3608E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiveSwitch.TextControl</RootNamespace>
+    <AssemblyName>LiveSwitch.TextControl</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HtmlAgilityPack\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editor.designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1\Answers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1\Tasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1\Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkDialog.Designer.cs">
+      <DependentUpon>LinkDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveForm.cs" />
+    <Compile Include="SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDialog.Designer.cs">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task.cs" />
+    <Compile Include="TestCollection.cs" />
+    <Compile Include="TestManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestManager.Designer.cs">
+      <DependentUpon>TestManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs" />
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkDialog.resx">
+      <DependentUpon>LinkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestManager.resx">
+      <DependentUpon>TestManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backcolor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bold.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cj.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fj.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italic.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lj.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ol.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outdent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_arrow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rj.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underscore.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uol.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmptyTest.html" />
+    <None Include="Resources\bullet_toggle_plus.png" />
+    <None Include="Resources\bullet_toggle_minus.png" />
+    <None Include="Resources\bullet_arrow_right.png" />
+    <None Include="Resources\bullet_arrow_left.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\bullet_go.png" />
+    <None Include="Resources\bullet_back.png" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
